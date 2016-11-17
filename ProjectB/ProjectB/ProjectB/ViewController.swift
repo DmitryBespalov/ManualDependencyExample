@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ProjectC
 
 public class ViewController: UIViewController {
 
@@ -19,7 +20,7 @@ public class ViewController: UIViewController {
 
     override public func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        addButton()
     }
 
     override public func didReceiveMemoryWarning() {
@@ -27,6 +28,19 @@ public class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    func addButton() {
+        let b = UIButton(type: .infoDark)
+        b.addTarget(self, action: #selector(openC), for: .touchUpInside)
+        b.center = view.center
+        view.addSubview(b)
+    }
+
+    func openC() {
+        let cController = ProjectC.OtherViewController.create()
+        present(cController, animated: true, completion:  { [weak self] in
+            self?.dismiss(animated: true, completion: nil)
+        })
+    }
 
 }
 

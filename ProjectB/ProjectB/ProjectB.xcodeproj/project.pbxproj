@@ -18,6 +18,7 @@
 		6DEBE5DA1DDDF09000000324 /* ProjectB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEBE5D11DDDF09000000324 /* ProjectB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6DEBE5E01DDDF0B200000324 /* ProjectBMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DEBE5961DDDEFE000000324 /* ProjectBMain.storyboard */; };
 		6DEBE5EF1DDDF7AD00000324 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEBE5941DDDEFE000000324 /* ViewController.swift */; };
+		6DEBE6541DDDFDE700000324 /* ProjectC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEBE6531DDDFDE700000324 /* ProjectC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		6DEBE5D11DDDF09000000324 /* ProjectB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProjectB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DEBE5D41DDDF09000000324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DEBE5EE1DDDF78A00000324 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		6DEBE6531DDDFDE700000324 /* ProjectC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ProjectC.framework; path = "../../Build/Products/Debug-iphonesimulator/ProjectC.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DEBE6541DDDFDE700000324 /* ProjectC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +121,7 @@
 				6DEBE5B11DDDEFE000000324 /* ProjectBUITests */,
 				6DEBE5D21DDDF09000000324 /* ProjectBFramework */,
 				6DEBE5901DDDEFE000000324 /* Products */,
+				6DEBE6521DDDFDE600000324 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,6 +174,14 @@
 				6DEBE5EE1DDDF78A00000324 /* module.modulemap */,
 			);
 			path = ProjectBFramework;
+			sourceTree = "<group>";
+		};
+		6DEBE6521DDDFDE600000324 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DEBE6531DDDFDE700000324 /* ProjectC.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

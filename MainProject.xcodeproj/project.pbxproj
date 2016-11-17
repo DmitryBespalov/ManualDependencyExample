@@ -118,6 +118,34 @@
 			remoteGlobalIDString = 6DEBE5D01DDDF09000000324;
 			remoteInfo = ProjectB;
 		};
+		6DEBE6311DDDFB6A00000324 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DEBE62B1DDDFB6900000324 /* ProjectC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6DEBE5FA1DDDFB6900000324;
+			remoteInfo = ProjectC;
+		};
+		6DEBE6331DDDFB6A00000324 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DEBE62B1DDDFB6900000324 /* ProjectC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6DEBE60E1DDDFB6900000324;
+			remoteInfo = ProjectCTests;
+		};
+		6DEBE6351DDDFB6A00000324 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DEBE62B1DDDFB6900000324 /* ProjectC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6DEBE6191DDDFB6900000324;
+			remoteInfo = ProjectCUITests;
+		};
+		6DEBE64C1DDDFC7900000324 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DEBE62B1DDDFB6900000324 /* ProjectC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6DEBE63C1DDDFB8E00000324;
+			remoteInfo = ProjectC;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -164,6 +192,7 @@
 		6DEBE5301DDDCDA600000324 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		6DEBE5311DDDCDA600000324 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		6DEBE5C01DDDEFE000000324 /* ProjectB.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ProjectB.xcodeproj; path = ProjectB/ProjectB/ProjectB.xcodeproj; sourceTree = "<group>"; };
+		6DEBE62B1DDDFB6900000324 /* ProjectC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ProjectC.xcodeproj; path = ProjectC/ProjectC/ProjectC.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,6 +311,7 @@
 			children = (
 				6DEBE4F81DDDC39800000324 /* ProjectA.xcodeproj */,
 				6DEBE5C01DDDEFE000000324 /* ProjectB.xcodeproj */,
+				6DEBE62B1DDDFB6900000324 /* ProjectC.xcodeproj */,
 			);
 			name = Dependencies;
 			sourceTree = "<group>";
@@ -293,6 +323,17 @@
 				6DEBE5C91DDDEFE100000324 /* ProjectBTests.xctest */,
 				6DEBE5CB1DDDEFE100000324 /* ProjectBUITests.xctest */,
 				6DEBE5E31DDDF0D100000324 /* ProjectBFramework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DEBE62C1DDDFB6900000324 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DEBE6321DDDFB6A00000324 /* ProjectC.app */,
+				6DEBE6341DDDFB6A00000324 /* ProjectCTests.xctest */,
+				6DEBE6361DDDFB6A00000324 /* ProjectCUITests.xctest */,
+				6DEBE64D1DDDFC7900000324 /* ProjectC.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -405,6 +446,10 @@
 					ProductGroup = 6DEBE5C11DDDEFE000000324 /* Products */;
 					ProjectRef = 6DEBE5C01DDDEFE000000324 /* ProjectB.xcodeproj */;
 				},
+				{
+					ProductGroup = 6DEBE62C1DDDFB6900000324 /* Products */;
+					ProjectRef = 6DEBE62B1DDDFB6900000324 /* ProjectC.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -477,6 +522,34 @@
 			fileType = wrapper.framework;
 			path = ProjectBFramework.framework;
 			remoteRef = 6DEBE5E21DDDF0D100000324 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6DEBE6321DDDFB6A00000324 /* ProjectC.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ProjectC.app;
+			remoteRef = 6DEBE6311DDDFB6A00000324 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6DEBE6341DDDFB6A00000324 /* ProjectCTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ProjectCTests.xctest;
+			remoteRef = 6DEBE6331DDDFB6A00000324 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6DEBE6361DDDFB6A00000324 /* ProjectCUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ProjectCUITests.xctest;
+			remoteRef = 6DEBE6351DDDFB6A00000324 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6DEBE64D1DDDFC7900000324 /* ProjectC.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ProjectC.framework;
+			remoteRef = 6DEBE64C1DDDFC7900000324 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -685,6 +758,7 @@
 			buildSettings = {
 				ALTERNATE_GROUP = "";
 				ALTERNATE_OWNER = "";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = AM644NVCRJ;
@@ -705,6 +779,7 @@
 			buildSettings = {
 				ALTERNATE_GROUP = "";
 				ALTERNATE_OWNER = "";
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = AM644NVCRJ;
