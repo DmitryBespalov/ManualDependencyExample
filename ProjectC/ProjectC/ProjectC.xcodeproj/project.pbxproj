@@ -18,6 +18,10 @@
 		6DEBE6441DDDFB8E00000324 /* ProjectC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEBE63C1DDDFB8E00000324 /* ProjectC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6DEBE6491DDDFBCB00000324 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEBE5FF1DDDFB6900000324 /* OtherViewController.swift */; };
 		6DEBE64A1DDDFBED00000324 /* ProjectCMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DEBE6011DDDFB6900000324 /* ProjectCMain.storyboard */; };
+		6DEBE6571DDE0D0000000324 /* ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEBE6561DDE0D0000000324 /* ModelMapper.swift */; };
+		6DEBE6581DDE0D0000000324 /* ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEBE6561DDE0D0000000324 /* ModelMapper.swift */; };
+		6DEBE65B1DDE0FAC00000324 /* ThirdPartyConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 6DEBE65A1DDE0FAC00000324 /* ThirdPartyConfig.xcconfig */; };
+		6DEBE65C1DDE0FAC00000324 /* ThirdPartyConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 6DEBE65A1DDE0FAC00000324 /* ThirdPartyConfig.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +78,8 @@
 		6DEBE61F1DDDFB6900000324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DEBE63C1DDDFB8E00000324 /* ProjectC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProjectC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DEBE63F1DDDFB8E00000324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DEBE6561DDE0D0000000324 /* ModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelMapper.swift; sourceTree = "<group>"; };
+		6DEBE65A1DDE0FAC00000324 /* ThirdPartyConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = ThirdPartyConfig.xcconfig; path = ../../ThirdPartyConfig.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,7 @@
 		6DEBE5F11DDDFB6900000324 = {
 			isa = PBXGroup;
 			children = (
+				6DEBE65A1DDE0FAC00000324 /* ThirdPartyConfig.xcconfig */,
 				6DEBE5FC1DDDFB6900000324 /* ProjectC */,
 				6DEBE6111DDDFB6900000324 /* ProjectCTests */,
 				6DEBE61C1DDDFB6900000324 /* ProjectCUITests */,
@@ -136,6 +143,7 @@
 			children = (
 				6DEBE5FD1DDDFB6900000324 /* AppDelegate.swift */,
 				6DEBE5FF1DDDFB6900000324 /* OtherViewController.swift */,
+				6DEBE6561DDE0D0000000324 /* ModelMapper.swift */,
 				6DEBE6011DDDFB6900000324 /* ProjectCMain.storyboard */,
 				6DEBE6041DDDFB6900000324 /* Assets.xcassets */,
 				6DEBE6061DDDFB6900000324 /* LaunchScreen.storyboard */,
@@ -313,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DEBE6081DDDFB6900000324 /* LaunchScreen.storyboard in Resources */,
+				6DEBE65B1DDE0FAC00000324 /* ThirdPartyConfig.xcconfig in Resources */,
 				6DEBE6051DDDFB6900000324 /* Assets.xcassets in Resources */,
 				6DEBE6031DDDFB6900000324 /* ProjectCMain.storyboard in Resources */,
 			);
@@ -337,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DEBE64A1DDDFBED00000324 /* ProjectCMain.storyboard in Resources */,
+				6DEBE65C1DDE0FAC00000324 /* ThirdPartyConfig.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DEBE6001DDDFB6900000324 /* OtherViewController.swift in Sources */,
+				6DEBE6571DDE0D0000000324 /* ModelMapper.swift in Sources */,
 				6DEBE5FE1DDDFB6900000324 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,6 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DEBE6581DDE0D0000000324 /* ModelMapper.swift in Sources */,
 				6DEBE6491DDDFBCB00000324 /* OtherViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,11 +523,16 @@
 		};
 		6DEBE6231DDDFB6900000324 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DEBE65A1DDE0FAC00000324 /* ThirdPartyConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ProjectC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-framework",
+					"\"ObjectMapper\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = de.zalando.ProjectC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -524,11 +541,16 @@
 		};
 		6DEBE6241DDDFB6900000324 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DEBE65A1DDE0FAC00000324 /* ThirdPartyConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ProjectC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-framework",
+					"\"ObjectMapper\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = de.zalando.ProjectC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -591,6 +613,7 @@
 		};
 		6DEBE6461DDDFB8E00000324 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DEBE65A1DDE0FAC00000324 /* ThirdPartyConfig.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
@@ -612,6 +635,7 @@
 		};
 		6DEBE6471DDDFB8E00000324 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DEBE65A1DDE0FAC00000324 /* ThirdPartyConfig.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;

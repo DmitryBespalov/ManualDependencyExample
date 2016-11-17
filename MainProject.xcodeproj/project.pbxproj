@@ -193,6 +193,8 @@
 		6DEBE5311DDDCDA600000324 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		6DEBE5C01DDDEFE000000324 /* ProjectB.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ProjectB.xcodeproj; path = ProjectB/ProjectB/ProjectB.xcodeproj; sourceTree = "<group>"; };
 		6DEBE62B1DDDFB6900000324 /* ProjectC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ProjectC.xcodeproj; path = ProjectC/ProjectC/ProjectC.xcodeproj; sourceTree = "<group>"; };
+		6DEBE6591DDE0E8F00000324 /* ThirdPartyConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ThirdPartyConfig.xcconfig; sourceTree = "<group>"; };
+		6DEBE65E1DDE10E000000324 /* EmbedFrameworksScript.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = EmbedFrameworksScript.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +227,7 @@
 		6DEBE46D1DDDC06C00000324 = {
 			isa = PBXGroup;
 			children = (
+				6DEBE6601DDE144A00000324 /* Build Scripts */,
 				6DEBE5431DDDD16B00000324 /* Dependencies */,
 				6DEBE4781DDDC06C00000324 /* MainProject */,
 				6DEBE4951DDDC06C00000324 /* MainProjectTests */,
@@ -338,6 +341,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		6DEBE6601DDE144A00000324 /* Build Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				6DEBE65E1DDE10E000000324 /* EmbedFrameworksScript.sh */,
+				6DEBE6591DDE0E8F00000324 /* ThirdPartyConfig.xcconfig */,
+			);
+			name = "Build Scripts";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -349,6 +361,7 @@
 				6DEBE4731DDDC06C00000324 /* Frameworks */,
 				6DEBE4741DDDC06C00000324 /* Resources */,
 				6DEBE5ED1DDDF5BF00000324 /* Embed Frameworks */,
+				6DEBE65D1DDE104800000324 /* Embed ThirdParty Frameworks */,
 			);
 			buildRules = (
 			);
@@ -582,6 +595,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6DEBE65D1DDE104800000324 /* Embed ThirdParty Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed ThirdParty Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/EmbedFrameworksScript.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6DEBE4721DDDC06C00000324 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -755,6 +785,7 @@
 		};
 		6DEBE4A71DDDC06C00000324 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DEBE6591DDE0E8F00000324 /* ThirdPartyConfig.xcconfig */;
 			buildSettings = {
 				ALTERNATE_GROUP = "";
 				ALTERNATE_OWNER = "";
@@ -776,6 +807,7 @@
 		};
 		6DEBE4A81DDDC06C00000324 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DEBE6591DDE0E8F00000324 /* ThirdPartyConfig.xcconfig */;
 			buildSettings = {
 				ALTERNATE_GROUP = "";
 				ALTERNATE_OWNER = "";

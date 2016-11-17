@@ -1,0 +1,6 @@
+[submodule "AFNetworking"]
+	path = ThirdParty/AFNetworking
+	url = https://github.com/AFNetworking/AFNetworking.git
+[submodule "ObjectMapper"]
+	path = ThirdParty/ObjectMapper
+	url = https://github.com/Hearst-DD/ObjectMapper.git

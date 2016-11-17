@@ -17,6 +17,11 @@ public class OtherViewController: UIViewController {
         return controller
     }
 
+    public override func viewDidLoad() {
+        super.viewDidLoad()
+        let m = ModelMapper()
+        m.example()
+    }
 
 
 }
