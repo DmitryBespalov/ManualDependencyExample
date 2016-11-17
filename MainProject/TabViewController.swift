@@ -8,6 +8,7 @@
 
 import UIKit
 import ProjectA
+import ProjectB
 
 class TabViewController: UITabBarController {
 
@@ -15,10 +16,16 @@ class TabViewController: UITabBarController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let aController = ViewController.create()
-        aController.tabBarItem = UITabBarItem(title: "ProjectA", image: #imageLiteral(resourceName: "first"), tag: 3)
         var controllers = viewControllers
+
+        let aController = ProjectA.MyViewController.create()
+        aController.tabBarItem = UITabBarItem(title: "ProjectA", image: #imageLiteral(resourceName: "first"), tag: 3)
         controllers?.append(aController)
+
+        let bController = ProjectB.ViewController.create()
+        bController.tabBarItem = UITabBarItem(title: "ProjectB", image: #imageLiteral(resourceName: "second"), tag: 4)
+        controllers?.append(bController)
+
         viewControllers = controllers
     }
 

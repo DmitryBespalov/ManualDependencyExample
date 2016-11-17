@@ -6,13 +6,13 @@
 //  Copyright © 2016 Zalando. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MyViewController.h"
 
-@interface ViewController ()
+@interface MyViewController ()
 
 @end
 
-@implementation ViewController
+@implementation MyViewController
 
 + (instancetype)create {
     NSBundle *bundle = [NSBundle bundleForClass:[self class]];
@@ -20,7 +20,7 @@
     assert(path);
     NSBundle *projectBundle = [NSBundle bundleWithPath:path];
     UIStoryboard *board = [UIStoryboard storyboardWithName:@"ProjectAMain" bundle:projectBundle];
-    ViewController *controller = (ViewController *)[board instantiateInitialViewController];
+    MyViewController *controller = (MyViewController *)[board instantiateInitialViewController];
     assert(controller);
     return controller;
 }

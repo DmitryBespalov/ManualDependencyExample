@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6DEBE4C11DDDC39800000324"
-               BuildableName = "ProjectADemo.app"
-               BlueprintName = "ProjectADemo"
-               ReferencedContainer = "container:ProjectA.xcodeproj">
+               BlueprintIdentifier = "6DEBE58E1DDDEFE000000324"
+               BuildableName = "ProjectBDemo.app"
+               BlueprintName = "ProjectBDemo"
+               ReferencedContainer = "container:ProjectB.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,34 +28,14 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6DEBE4DA1DDDC39800000324"
-               BuildableName = "ProjectATests.xctest"
-               BlueprintName = "ProjectATests"
-               ReferencedContainer = "container:ProjectA.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6DEBE4E51DDDC39800000324"
-               BuildableName = "ProjectAUITests.xctest"
-               BlueprintName = "ProjectAUITests"
-               ReferencedContainer = "container:ProjectA.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6DEBE4C11DDDC39800000324"
-            BuildableName = "ProjectADemo.app"
-            BlueprintName = "ProjectADemo"
-            ReferencedContainer = "container:ProjectA.xcodeproj">
+            BlueprintIdentifier = "6DEBE58E1DDDEFE000000324"
+            BuildableName = "ProjectBDemo.app"
+            BlueprintName = "ProjectBDemo"
+            ReferencedContainer = "container:ProjectB.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6DEBE4C11DDDC39800000324"
-            BuildableName = "ProjectADemo.app"
-            BlueprintName = "ProjectADemo"
-            ReferencedContainer = "container:ProjectA.xcodeproj">
+            BlueprintIdentifier = "6DEBE58E1DDDEFE000000324"
+            BuildableName = "ProjectBDemo.app"
+            BlueprintName = "ProjectBDemo"
+            ReferencedContainer = "container:ProjectB.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6DEBE4C11DDDC39800000324"
-            BuildableName = "ProjectADemo.app"
-            BlueprintName = "ProjectADemo"
-            ReferencedContainer = "container:ProjectA.xcodeproj">
+            BlueprintIdentifier = "6DEBE58E1DDDEFE000000324"
+            BuildableName = "ProjectBDemo.app"
+            BlueprintName = "ProjectBDemo"
+            ReferencedContainer = "container:ProjectB.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
