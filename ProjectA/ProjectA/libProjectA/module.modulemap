@@ -1,0 +1,4 @@
+module ProjectA {
+    umbrella header "libProjectA.h"
+    export *
+}
