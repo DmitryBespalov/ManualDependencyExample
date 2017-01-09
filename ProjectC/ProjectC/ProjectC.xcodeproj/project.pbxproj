@@ -20,8 +20,6 @@
 		6DEBE64A1DDDFBED00000324 /* ProjectCMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DEBE6011DDDFB6900000324 /* ProjectCMain.storyboard */; };
 		6DEBE6571DDE0D0000000324 /* ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEBE6561DDE0D0000000324 /* ModelMapper.swift */; };
 		6DEBE6581DDE0D0000000324 /* ModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEBE6561DDE0D0000000324 /* ModelMapper.swift */; };
-		6DEBE65B1DDE0FAC00000324 /* ThirdPartyConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 6DEBE65A1DDE0FAC00000324 /* ThirdPartyConfig.xcconfig */; };
-		6DEBE65C1DDE0FAC00000324 /* ThirdPartyConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 6DEBE65A1DDE0FAC00000324 /* ThirdPartyConfig.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +61,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6DB46A291E23924C00AABC17 /* ThirdPartyConfigC.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = ThirdPartyConfigC.xcconfig; sourceTree = "<group>"; };
 		6DEBE5FA1DDDFB6900000324 /* ProjectCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DEBE5FD1DDDFB6900000324 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6DEBE5FF1DDDFB6900000324 /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
@@ -79,7 +78,6 @@
 		6DEBE63C1DDDFB8E00000324 /* ProjectC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ProjectC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DEBE63F1DDDFB8E00000324 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DEBE6561DDE0D0000000324 /* ModelMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelMapper.swift; sourceTree = "<group>"; };
-		6DEBE65A1DDE0FAC00000324 /* ThirdPartyConfig.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = ThirdPartyConfig.xcconfig; path = ../../ThirdPartyConfig.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +116,7 @@
 		6DEBE5F11DDDFB6900000324 = {
 			isa = PBXGroup;
 			children = (
-				6DEBE65A1DDE0FAC00000324 /* ThirdPartyConfig.xcconfig */,
+				6DB46A291E23924C00AABC17 /* ThirdPartyConfigC.xcconfig */,
 				6DEBE5FC1DDDFB6900000324 /* ProjectC */,
 				6DEBE6111DDDFB6900000324 /* ProjectCTests */,
 				6DEBE61C1DDDFB6900000324 /* ProjectCUITests */,
@@ -321,7 +319,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DEBE6081DDDFB6900000324 /* LaunchScreen.storyboard in Resources */,
-				6DEBE65B1DDE0FAC00000324 /* ThirdPartyConfig.xcconfig in Resources */,
 				6DEBE6051DDDFB6900000324 /* Assets.xcassets in Resources */,
 				6DEBE6031DDDFB6900000324 /* ProjectCMain.storyboard in Resources */,
 			);
@@ -346,7 +343,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DEBE64A1DDDFBED00000324 /* ProjectCMain.storyboard in Resources */,
-				6DEBE65C1DDE0FAC00000324 /* ThirdPartyConfig.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -523,7 +519,6 @@
 		};
 		6DEBE6231DDDFB6900000324 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6DEBE65A1DDE0FAC00000324 /* ThirdPartyConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -541,7 +536,6 @@
 		};
 		6DEBE6241DDDFB6900000324 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6DEBE65A1DDE0FAC00000324 /* ThirdPartyConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -613,7 +607,7 @@
 		};
 		6DEBE6461DDDFB8E00000324 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6DEBE65A1DDE0FAC00000324 /* ThirdPartyConfig.xcconfig */;
+			baseConfigurationReference = 6DB46A291E23924C00AABC17 /* ThirdPartyConfigC.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
@@ -635,7 +629,7 @@
 		};
 		6DEBE6471DDDFB8E00000324 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6DEBE65A1DDE0FAC00000324 /* ThirdPartyConfig.xcconfig */;
+			baseConfigurationReference = 6DB46A291E23924C00AABC17 /* ThirdPartyConfigC.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CURRENT_PROJECT_VERSION = 1;
@@ -674,6 +668,7 @@
 				6DEBE6241DDDFB6900000324 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6DEBE6251DDDFB6900000324 /* Build configuration list for PBXNativeTarget "ProjectCTests" */ = {
 			isa = XCConfigurationList;
@@ -682,6 +677,7 @@
 				6DEBE6271DDDFB6900000324 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6DEBE6281DDDFB6900000324 /* Build configuration list for PBXNativeTarget "ProjectCUITests" */ = {
 			isa = XCConfigurationList;
@@ -690,6 +686,7 @@
 				6DEBE62A1DDDFB6900000324 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6DEBE6451DDDFB8E00000324 /* Build configuration list for PBXNativeTarget "ProjectC" */ = {
 			isa = XCConfigurationList;
@@ -698,6 +695,7 @@
 				6DEBE6471DDDFB8E00000324 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

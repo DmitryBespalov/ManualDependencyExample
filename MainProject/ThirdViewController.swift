@@ -8,6 +8,8 @@
 
 import UIKit
 import ProjectC
+import AFNetworking
+import Reachability
 
 class ThirdViewController: UIViewController {
 

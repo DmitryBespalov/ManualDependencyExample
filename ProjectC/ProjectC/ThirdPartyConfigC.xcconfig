@@ -1,0 +1,5 @@
+
+HEADER_SEARCH_PATHS="${SRCROOT}/../../Libraries/${PLATFORM_NAME}/include"
+LIBRARY_SEARCH_PATHS="${SRCROOT}/../../Libraries/${PLATFORM_NAME}"
+FRAMEWORK_SEARCH_PATHS="${SRCROOT}/../../Frameworks/${PLATFORM_NAME}"
+OTHER_LDFLAGS = -framework "ObjectMapper"
