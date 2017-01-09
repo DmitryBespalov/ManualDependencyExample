@@ -1,6 +1,8 @@
 #!/bin/sh
 set -e
 
+FRAMEWORKS_DIR = ${SRCROOT}/../Frameworks/${PLATFORM_NAME}
+
 echo "mkdir -p ${CONFIGURATION_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}"
 mkdir -p "${CONFIGURATION_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}"
 
@@ -82,5 +84,6 @@ strip_invalid_archs() {
   fi
 }
 
-install_framework "Frameworks/${PLATFORM_NAME}/ObjectMapper.framework"
-install_framework "Frameworks/${PLATFORM_NAME}/AFNetworking.framework"
+for f in ${FRAMEWORKS_DIR}/*.framework; do
+  install_framework "$f"
+done;

@@ -21,9 +21,9 @@
 		6DEBE4B71DDDC19000000324 /* MainProjectAnotherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEBE4B61DDDC19000000324 /* MainProjectAnotherUITests.swift */; };
 		6DEBE5241DDDC58F00000324 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DEBE5231DDDC58F00000324 /* TabViewController.swift */; };
 		6DEBE5401DDDD00100000324 /* ProjectABundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6DEBE53F1DDDD00100000324 /* ProjectABundle.bundle */; };
-		6DEBE54A1DDDEB4E00000324 /* liblibProjectA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEBE5211DDDC55700000324 /* liblibProjectA.a */; };
-		6DEBE5E91DDDF5BF00000324 /* ProjectBFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEBE5E31DDDF0D100000324 /* ProjectBFramework.framework */; };
-		6DEBE5EA1DDDF5BF00000324 /* ProjectBFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEBE5E31DDDF0D100000324 /* ProjectBFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6DEBE54A1DDDEB4E00000324 /* libProjectAObjc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEBE5211DDDC55700000324 /* libProjectAObjc.a */; };
+		6DEBE5E91DDDF5BF00000324 /* ProjectB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEBE5E31DDDF0D100000324 /* ProjectB.framework */; };
+		6DEBE5EA1DDDF5BF00000324 /* ProjectB.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6DEBE5E31DDDF0D100000324 /* ProjectB.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,7 +155,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				6DEBE5EA1DDDF5BF00000324 /* ProjectBFramework.framework in Embed Frameworks */,
+				6DEBE5EA1DDDF5BF00000324 /* ProjectB.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,8 +202,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DEBE54A1DDDEB4E00000324 /* liblibProjectA.a in Frameworks */,
-				6DEBE5E91DDDF5BF00000324 /* ProjectBFramework.framework in Frameworks */,
+				6DEBE54A1DDDEB4E00000324 /* libProjectAObjc.a in Frameworks */,
+				6DEBE5E91DDDF5BF00000324 /* ProjectB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,7 +303,7 @@
 				6DEBE4FF1DDDC39900000324 /* ProjectA.app */,
 				6DEBE5011DDDC39900000324 /* ProjectATests.xctest */,
 				6DEBE5031DDDC39900000324 /* ProjectAUITests.xctest */,
-				6DEBE5211DDDC55700000324 /* liblibProjectA.a */,
+				6DEBE5211DDDC55700000324 /* libProjectAObjc.a */,
 				6DEBE53F1DDDD00100000324 /* ProjectABundle.bundle */,
 			);
 			name = Products;
@@ -325,7 +325,7 @@
 				6DEBE5C71DDDEFE100000324 /* ProjectB.app */,
 				6DEBE5C91DDDEFE100000324 /* ProjectBTests.xctest */,
 				6DEBE5CB1DDDEFE100000324 /* ProjectBUITests.xctest */,
-				6DEBE5E31DDDF0D100000324 /* ProjectBFramework.framework */,
+				6DEBE5E31DDDF0D100000324 /* ProjectB.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -477,7 +477,7 @@
 		6DEBE4FF1DDDC39900000324 /* ProjectA.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
-			path = ProjectA.app;
+			path = ProjectADemo.app;
 			remoteRef = 6DEBE4FE1DDDC39900000324 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -495,10 +495,10 @@
 			remoteRef = 6DEBE5021DDDC39900000324 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		6DEBE5211DDDC55700000324 /* liblibProjectA.a */ = {
+		6DEBE5211DDDC55700000324 /* libProjectAObjc.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = liblibProjectA.a;
+			path = libProjectAObjc.a;
 			remoteRef = 6DEBE5201DDDC55700000324 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -512,7 +512,7 @@
 		6DEBE5C71DDDEFE100000324 /* ProjectB.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
-			path = ProjectB.app;
+			path = ProjectBDemo.app;
 			remoteRef = 6DEBE5C61DDDEFE100000324 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -530,17 +530,17 @@
 			remoteRef = 6DEBE5CA1DDDEFE100000324 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		6DEBE5E31DDDF0D100000324 /* ProjectBFramework.framework */ = {
+		6DEBE5E31DDDF0D100000324 /* ProjectB.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
-			path = ProjectBFramework.framework;
+			path = ProjectB.framework;
 			remoteRef = 6DEBE5E21DDDF0D100000324 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		6DEBE6321DDDFB6A00000324 /* ProjectC.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
-			path = ProjectC.app;
+			path = ProjectCDemo.app;
 			remoteRef = 6DEBE6311DDDFB6A00000324 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -909,6 +909,7 @@
 				6DEBE4A81DDDC06C00000324 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6DEBE4A91DDDC06C00000324 /* Build configuration list for PBXNativeTarget "MainProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -917,6 +918,7 @@
 				6DEBE4AB1DDDC06C00000324 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6DEBE4AC1DDDC06C00000324 /* Build configuration list for PBXNativeTarget "MainProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -925,6 +927,7 @@
 				6DEBE4AE1DDDC06C00000324 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
